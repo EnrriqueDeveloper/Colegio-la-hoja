@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400& display=swap');
+
+body{
+    background:url(/img/colegio.jpg);
+}
+.container {
+    background: #E8F0F9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: rgb(43 43 43);
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+nav img{
+    height: 62px;
+}
+
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+nav ol li{
+    margin: 0 2px;
+}
+nav ol li a{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+nav ol li:hover a{
+    background-color: rgb(68, 255, 118);
+    color: #000;
+}
+nav .search_box{
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: rgb(245, 245, 245);
+    height: 100%;
+    padding: 0 10px;
+    font-size: 13px;
+    width: 350px;
+
+}
+nav .search_box span{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    background-color: #fff;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+nav .search_box span::after{
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: rgb(68, 255, 118);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+nav .search_box span:hover::after{
+    width: 100%;
+}
+nav .bar{
+    position: relative;
+    margin: auto; 
+    display: none; 
+}
+nav .bar span{
+    position: absolute;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 1250px){
+    nav{
+        display: block;
+        padding: 0;
+    }
+    nav .icon img{
+        display: inline-block;
+        padding: 15px 30px;
+    }
+    nav .search_box{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    nav .search_box input{
+        width: 90%;
+    }
+    nav ol{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    nav ol li{
+        text-align: center;
+    }
+    nav ol li a{
+        font-size: 16px;
+        padding: 28px;
+        display: block;
+    }    
+}
+.center{
+    text-align: center;
+    font-family: monospace;
+    background: black;
+    height: 460px;
+    border-radius: 20px;
+}
+input.texto{
+    height: 60px;
+    width: 300px;
+    margin-top: 40px;
+    border-radius: 1px;
+    text-align: right;
+    padding: 13px;
+    border: 1px solid #e1e7ea;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+form .buttons{
+    width: 300px;
+    margin: 10px 25px 0 9px;
+    padding: 10px 0;
+}
+input[type="button"]{
+    width: 58px;
+    height: 55px;
+    margin: 5px;
+    font-size: 22px;
+    line-height: 55px;
+    border: 1px solid #d9d9d9;
+    background: linear-gradient(#d9d9d9, #bfbfbf);
+}
+input[type="button"]:hover{
+    transition: .5s;
+    background: linear-gradient(#bfbfbf, #d9d9d9);
+}
+input#clear{
+    background: #ff1a1a;
+    border: 1px solid #cc0000;
+    color: white;
+}
+input#equal{
+    width: 275px;
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+    color: white;
+    background: #ff3f00;
+    border: 1px solid #b32a00;
+}
